@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms; // remember to comment out when loading for AutoCAD
+//using System.Windows.Forms; // remember to comment out when loading for AutoCAD
 
 // Import Autodesk Dependancies
 using Autodesk.AutoCAD.Runtime;
@@ -29,7 +29,7 @@ namespace Altext
         {
             // Load up interface to perform the *magic*
             Editor ed = Autodesk.AutoCAD.ApplicationServices.Application.DocumentManager.MdiActiveDocument.Editor;
-            ed.WriteMessage("\nAltext version: 0.2.1");
+            ed.WriteMessage("\nAltext version: 0.2.2");
         }
     }
 
@@ -38,7 +38,7 @@ namespace Altext
         [STAThread]
         static void Main()
         {
-            Application.Run(new MainInterface());
+            //Application.Run(new MainInterface());
         }
     }
 }

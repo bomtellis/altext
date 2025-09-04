@@ -188,7 +188,7 @@ namespace Altext.libs.autocad
                                             }
                                             else
                                             {
-                                                newValue += incrementAmount + i + 1;
+                                                newValue += incrementAmount * i;
                                             }
                                         }
 
@@ -364,7 +364,7 @@ namespace Altext.libs.autocad
 
         }
 
-        public void IncrementBlockAttributeBetweenValues(int incrementAmount, List<SortedBlock> blocks, string tagName, bool leadingZeros, bool leadingString, string leadingText, int lowerBound, int higherBound, string filePath, bool csvExport = false)
+        public void IncrementBlockAttributeBetweenValues(int incrementAmount, List<SortedBlock> blocks, string tagName, bool leadingZeros, bool leadingString, string leadingText, int startValue, int higherBound, string filePath, bool csvExport = false)
         {
             int modifiedCount = 0;
             Document doc = Application.DocumentManager.MdiActiveDocument;
@@ -402,12 +402,12 @@ namespace Altext.libs.autocad
                                         int oldValue = int.Parse(attrRef.TextString);
                                         int newValue;
 
-                                        if(oldValue >= lowerBound && oldValue <= higherBound)
+                                        if(oldValue >= startValue && oldValue <= higherBound)
                                         {
                                             // make it writeable
                                             dbObj.UpgradeOpen();
 
-                                            newValue = lowerBound + i;
+                                            newValue = startValue + i;
 
                                             if (i > 0)
                                             {
@@ -417,7 +417,7 @@ namespace Altext.libs.autocad
                                                 }
                                                 else
                                                 {
-                                                    newValue += incrementAmount + i + 1;
+                                                    newValue += incrementAmount * i;
                                                 }
                                             }
 
@@ -475,7 +475,7 @@ namespace Altext.libs.autocad
             }
         }
 
-        public void IncrementBlockAttributeFromValue(int incrementAmount, List<SortedBlock> blocks, string tagName, bool leadingZeros, bool leadingString, string leadingText, int lowerBound, string filePath, bool csvExport = false)
+        public void IncrementBlockWithStartValue(int incrementAmount, List<SortedBlock> blocks, string tagName, bool leadingZeros, bool leadingString, string leadingText, int startValue, string filePath, bool csvExport = false)
         {
             int modifiedCount = 0;
             Document doc = Application.DocumentManager.MdiActiveDocument;
@@ -509,8 +509,6 @@ namespace Altext.libs.autocad
 
                                     if (attrRef.Tag.ToUpper() == tagName.ToUpper())
                                     {
-                                        if (int.Parse(attrRef.TextString) > lowerBound)
-                                        {
                                             // do work
                                             int oldValue = int.Parse(attrRef.TextString);
 
@@ -518,7 +516,7 @@ namespace Altext.libs.autocad
                                             dbObj.UpgradeOpen();
 
                                             // find the old string and increment replace with new string.
-                                            int newValue = lowerBound;
+                                            int newValue = startValue;
 
                                             if (i > 0)
                                             {
@@ -528,7 +526,7 @@ namespace Altext.libs.autocad
                                                 }
                                                 else
                                                 {
-                                                    newValue += incrementAmount + i;
+                                                    newValue += incrementAmount * i;
                                                 }
                                             }
 
@@ -563,7 +561,6 @@ namespace Altext.libs.autocad
 
                                             //make readonly again
                                             dbObj.DowngradeOpen();
-                                        }
                                     }
                                 }
                             }

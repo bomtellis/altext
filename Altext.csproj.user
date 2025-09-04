@@ -8,4 +8,9 @@
     <StartAction>Program</StartAction>
     <StartProgram>C:\Program Files\Autodesk\AutoCAD 2020\acad.exe</StartProgram>
   </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="MainInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
 </Project>

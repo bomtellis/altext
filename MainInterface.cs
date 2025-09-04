@@ -50,38 +50,19 @@ namespace Altext
         {
             switch (ModeComboBox.Text)
             {
-                //All
-                //From Number
-                //To Number
-                //Between Numbers
+                //Renumber all
+                //Increment from value
 
-                case "All":
+                case "Renumber all":
                     StartNumberTxtBox.Enabled = false;
-                    EndNumberTxtBox.Enabled = false;
                     StartBtn.Enabled = true;
                     break;
-                case "From Number":
+                case "Increment from value":
                     StartNumberTxtBox.Enabled = true;
-                    EndNumberTxtBox.Enabled = false;
-                    StartBtn.Enabled = true;
-                    break;
-                case "To Number":
-                    EndNumberTxtBox.Enabled = true;
-                    StartNumberTxtBox.Enabled = false;
-                    StartBtn.Enabled = true;
-                    break;
-                case "Between Numbers":
-                    StartNumberTxtBox.Enabled = true;
-                    EndNumberTxtBox.Enabled = true;
-                    StartBtn.Enabled = true;
-                    break;
-                case "Increment Only":
-                    StartNumberTxtBox.Enabled = false;
                     StartBtn.Enabled = true;
                     break;
                 default:
                     StartNumberTxtBox.Enabled = false;
-                    EndNumberTxtBox.Enabled = false;
                     StartBtn.Enabled = false;
                     break;
             }
@@ -124,46 +105,17 @@ namespace Altext
             {
                 switch (ModeComboBox.Text)
                 {
-                    case "All":
+                    case "Renumber all":
                         StartNumberTxtBox.Enabled = false;
-                        EndNumberTxtBox.Enabled = false;
                         if(IncrementTxtBox.Text != "")
                         {
                             runProgram = true;
                             programType = 0;
                         }
                         break;
-                    case "From Number":
+                    case "Increment from value":
                         StartNumberTxtBox.Enabled = true;
-                        EndNumberTxtBox.Enabled = false;
                         if (IncrementTxtBox.Text != "" && StartNumberTxtBox.Text != "")
-                        {
-                            runProgram = true;
-                            programType = 1;
-                        }
-                        break;
-                    case "To Number":
-                        EndNumberTxtBox.Enabled = true;
-                        StartNumberTxtBox.Enabled = false;
-                        if (IncrementTxtBox.Text != "" && EndNumberTxtBox.Text != "")
-                        {
-                            runProgram = true;
-                            programType = 2;
-                        }
-                        break;
-                    case "Between Numbers":
-                        StartNumberTxtBox.Enabled = true;
-                        EndNumberTxtBox.Enabled = true;
-                        if (IncrementTxtBox.Text != "" && StartNumberTxtBox.Text != "" && EndNumberTxtBox.Text != "")
-                        {
-                            runProgram = true;
-                            programType = 3;
-                        }
-                        break;
-                    case "Increment Only":
-                        StartNumberTxtBox.Enabled = false;
-                        EndNumberTxtBox.Enabled = false;
-                        if (IncrementTxtBox.Text != "")
                         {
                             runProgram = true;
                             programType = 4;
@@ -171,7 +123,6 @@ namespace Altext
                         break;
                     default:
                         StartNumberTxtBox.Enabled = false;
-                        EndNumberTxtBox.Enabled = false;
                         StartBtn.Enabled = false;
                         programType = 0;
                         break;
@@ -188,44 +139,38 @@ namespace Altext
                 runProgram = true;
             }
 
-            if(runProgram)
+            //get vertices of polyline
+            List<Point2d> polylinePoints = polylines.GetPolylineVertices(polylineId);
+
+            // check if the polyline duplicate box is checked
+            if (PLineDuplicates.Checked)
             {
-                //get vertices of polyline
-                List<Point2d> polylinePoints = polylines.GetPolylineVertices(polylineId);
+                polylinePoints = polylinePoints.Distinct(new PolylineDistinct()).ToList();
+            }
 
-                // check if the polyline duplicate box is checked
-                if(PLineDuplicates.Checked)
-                {
-                    polylinePoints = polylinePoints.Distinct(new PolylineDistinct()).ToList();
-                }
+            //get insertion points of blocks
+            List<Blocks.SortedBlock> blockInsertionPoints = BlocksLib.GetInsertionBasePoints(blocks);
 
-                //get insertion points of blocks
-                List<Blocks.SortedBlock> blockInsertionPoints = BlocksLib.GetInsertionBasePoints(blocks);
+            // get blocks organised following the polyline
+            List<Blocks.SortedBlock> organisedBlocks = points.FindClostestPoints(polylinePoints, blockInsertionPoints);
 
-                // get blocks organised following the polyline
-                List<Blocks.SortedBlock> organisedBlocks = points.FindClostestPoints(polylinePoints, blockInsertionPoints);
+            // Check number of points in polyline match number of blocks in group
+            if (polylinePoints.Count != blocks.Count)
+            {
+                runProgram = false;
+            }
 
+            if (runProgram)
+            {
                 switch (programType)
                 {
                     case 0:
                         // do the job
                         BlocksLib.IncrementBlockAttribute(int.Parse(IncrementTxtBox.Text), organisedBlocks, AttributeComboBox.Text, LeadingZerosCheckBox.Checked, LeadingLetterCheckBox.Checked, LeadingLetterTxtBox.Text, FilePathTxtBox.Text, CsvOutputCheckBox.Checked);
                         break;
-                    case 1:
-                        // do the job
-                        BlocksLib.IncrementBlockAttributeFromValue(int.Parse(IncrementTxtBox.Text), organisedBlocks, AttributeComboBox.Text, LeadingZerosCheckBox.Checked, LeadingLetterCheckBox.Checked, LeadingLetterTxtBox.Text, int.Parse(StartNumberTxtBox.Text), FilePathTxtBox.Text, CsvOutputCheckBox.Checked);
-                        break;
-                    case 2:
-                        // do the job
-                        BlocksLib.IncrementBlockAttributeToValue(int.Parse(IncrementTxtBox.Text), organisedBlocks, AttributeComboBox.Text, LeadingZerosCheckBox.Checked, LeadingLetterCheckBox.Checked, LeadingLetterTxtBox.Text, int.Parse(EndNumberTxtBox.Text), FilePathTxtBox.Text, CsvOutputCheckBox.Checked);
-                        break;
-                    case 3:
-                        // do the job
-                        BlocksLib.IncrementBlockAttributeBetweenValues(int.Parse(IncrementTxtBox.Text), organisedBlocks, AttributeComboBox.Text, LeadingZerosCheckBox.Checked, LeadingLetterCheckBox.Checked, LeadingLetterTxtBox.Text, int.Parse(StartNumberTxtBox.Text), int.Parse(EndNumberTxtBox.Text), FilePathTxtBox.Text, CsvOutputCheckBox.Checked);
-                        break;
                     case 4:
                         // do the job
-                        BlocksLib.IncrementOnly(int.Parse(IncrementTxtBox.Text), organisedBlocks, AttributeComboBox.Text, LeadingZerosCheckBox.Checked, LeadingLetterCheckBox.Checked, LeadingLetterTxtBox.Text, FilePathTxtBox.Text, CsvOutputCheckBox.Checked);
+                        BlocksLib.IncrementBlockWithStartValue(int.Parse(IncrementTxtBox.Text), organisedBlocks, AttributeComboBox.Text, LeadingZerosCheckBox.Checked, LeadingLetterCheckBox.Checked, LeadingLetterTxtBox.Text, int.Parse(StartNumberTxtBox.Text), FilePathTxtBox.Text, CsvOutputCheckBox.Checked);
                         break;
                     default:
                         break;
@@ -235,6 +180,12 @@ namespace Altext
             }
             else
             {
+                // Check number of points in polyline match number of blocks in group
+                if (polylinePoints.Count != blocks.Count)
+                {
+                    MessageBox.Show("The number of polyline vertices doesn\'t match the number of blocks selected.");
+                }
+
                 MessageBox.Show("Please fill in the fields required");
             }
         }

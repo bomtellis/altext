@@ -28,354 +28,354 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.AttributeComboBox = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.PickBlockBtn = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.LeadingLetterTxtBox = new System.Windows.Forms.TextBox();
-            this.LeadingLetterCheckBox = new System.Windows.Forms.CheckBox();
-            this.LeadingZerosCheckBox = new System.Windows.Forms.CheckBox();
-            this.StartBtn = new System.Windows.Forms.Button();
-            this.EndNumberTxtBox = new System.Windows.Forms.TextBox();
-            this.CancelBtn = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.StartNumberTxtBox = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.SavePathBtn = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.IncrementTxtBox = new System.Windows.Forms.TextBox();
-            this.FilePathTxtBox = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.CsvOutputCheckBox = new System.Windows.Forms.CheckBox();
-            this.ModeComboBox = new System.Windows.Forms.ComboBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.PolylineStatusTxtBox = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.PickPolylineBtn = new System.Windows.Forms.Button();
-            this.SaveFileDialogCSV = new System.Windows.Forms.SaveFileDialog();
-            this.PLineDuplicates = new System.Windows.Forms.CheckBox();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.SuspendLayout();
+            groupBox1 = new System.Windows.Forms.GroupBox();
+            AttributeComboBox = new System.Windows.Forms.ComboBox();
+            label1 = new System.Windows.Forms.Label();
+            PickBlockBtn = new System.Windows.Forms.Button();
+            groupBox2 = new System.Windows.Forms.GroupBox();
+            PLineDuplicates = new System.Windows.Forms.CheckBox();
+            LeadingLetterTxtBox = new System.Windows.Forms.TextBox();
+            LeadingLetterCheckBox = new System.Windows.Forms.CheckBox();
+            LeadingZerosCheckBox = new System.Windows.Forms.CheckBox();
+            StartBtn = new System.Windows.Forms.Button();
+            CancelBtn = new System.Windows.Forms.Button();
+            StartNumberTxtBox = new System.Windows.Forms.TextBox();
+            label6 = new System.Windows.Forms.Label();
+            label5 = new System.Windows.Forms.Label();
+            SavePathBtn = new System.Windows.Forms.Button();
+            label4 = new System.Windows.Forms.Label();
+            IncrementTxtBox = new System.Windows.Forms.TextBox();
+            FilePathTxtBox = new System.Windows.Forms.TextBox();
+            label2 = new System.Windows.Forms.Label();
+            CsvOutputCheckBox = new System.Windows.Forms.CheckBox();
+            ModeComboBox = new System.Windows.Forms.ComboBox();
+            groupBox3 = new System.Windows.Forms.GroupBox();
+            PolylineStatusTxtBox = new System.Windows.Forms.TextBox();
+            label3 = new System.Windows.Forms.Label();
+            PickPolylineBtn = new System.Windows.Forms.Button();
+            SaveFileDialogCSV = new System.Windows.Forms.SaveFileDialog();
+            groupBox1.SuspendLayout();
+            groupBox2.SuspendLayout();
+            groupBox3.SuspendLayout();
+            SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.Controls.Add(this.AttributeComboBox);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.PickBlockBtn);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(445, 74);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Block Details";
-            this.groupBox1.UseCompatibleTextRendering = true;
+            groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            groupBox1.Controls.Add(AttributeComboBox);
+            groupBox1.Controls.Add(label1);
+            groupBox1.Controls.Add(PickBlockBtn);
+            groupBox1.Location = new System.Drawing.Point(14, 14);
+            groupBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            groupBox1.Size = new System.Drawing.Size(519, 85);
+            groupBox1.TabIndex = 0;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Block Details";
+            groupBox1.UseCompatibleTextRendering = true;
             // 
             // AttributeComboBox
             // 
-            this.AttributeComboBox.Enabled = false;
-            this.AttributeComboBox.FormattingEnabled = true;
-            this.AttributeComboBox.Location = new System.Drawing.Point(9, 36);
-            this.AttributeComboBox.Name = "AttributeComboBox";
-            this.AttributeComboBox.Size = new System.Drawing.Size(336, 21);
-            this.AttributeComboBox.TabIndex = 3;
+            AttributeComboBox.Enabled = false;
+            AttributeComboBox.FormattingEnabled = true;
+            AttributeComboBox.Location = new System.Drawing.Point(10, 42);
+            AttributeComboBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            AttributeComboBox.Name = "AttributeComboBox";
+            AttributeComboBox.Size = new System.Drawing.Size(391, 23);
+            AttributeComboBox.TabIndex = 3;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Attribute to change:";
+            label1.AutoSize = true;
+            label1.Location = new System.Drawing.Point(7, 22);
+            label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(113, 15);
+            label1.TabIndex = 2;
+            label1.Text = "Attribute to change:";
             // 
             // PickBlockBtn
             // 
-            this.PickBlockBtn.Location = new System.Drawing.Point(360, 34);
-            this.PickBlockBtn.Name = "PickBlockBtn";
-            this.PickBlockBtn.Size = new System.Drawing.Size(75, 23);
-            this.PickBlockBtn.TabIndex = 0;
-            this.PickBlockBtn.Text = "Pick Blocks";
-            this.PickBlockBtn.UseVisualStyleBackColor = true;
-            this.PickBlockBtn.Click += new System.EventHandler(this.PickBlockBtn_Click);
+            PickBlockBtn.Location = new System.Drawing.Point(420, 39);
+            PickBlockBtn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            PickBlockBtn.Name = "PickBlockBtn";
+            PickBlockBtn.Size = new System.Drawing.Size(88, 27);
+            PickBlockBtn.TabIndex = 0;
+            PickBlockBtn.Text = "Pick Blocks";
+            PickBlockBtn.UseVisualStyleBackColor = true;
+            PickBlockBtn.Click += PickBlockBtn_Click;
             // 
             // groupBox2
             // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox2.Controls.Add(this.PLineDuplicates);
-            this.groupBox2.Controls.Add(this.LeadingLetterTxtBox);
-            this.groupBox2.Controls.Add(this.LeadingLetterCheckBox);
-            this.groupBox2.Controls.Add(this.LeadingZerosCheckBox);
-            this.groupBox2.Controls.Add(this.StartBtn);
-            this.groupBox2.Controls.Add(this.EndNumberTxtBox);
-            this.groupBox2.Controls.Add(this.CancelBtn);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.StartNumberTxtBox);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.SavePathBtn);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.IncrementTxtBox);
-            this.groupBox2.Controls.Add(this.FilePathTxtBox);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.CsvOutputCheckBox);
-            this.groupBox2.Controls.Add(this.ModeComboBox);
-            this.groupBox2.Location = new System.Drawing.Point(12, 152);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(445, 242);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Mode of Operation";
-            // 
-            // LeadingLetterTxtBox
-            // 
-            this.LeadingLetterTxtBox.Enabled = false;
-            this.LeadingLetterTxtBox.Location = new System.Drawing.Point(12, 204);
-            this.LeadingLetterTxtBox.Name = "LeadingLetterTxtBox";
-            this.LeadingLetterTxtBox.Size = new System.Drawing.Size(200, 20);
-            this.LeadingLetterTxtBox.TabIndex = 13;
-            // 
-            // LeadingLetterCheckBox
-            // 
-            this.LeadingLetterCheckBox.AutoSize = true;
-            this.LeadingLetterCheckBox.Location = new System.Drawing.Point(12, 184);
-            this.LeadingLetterCheckBox.Name = "LeadingLetterCheckBox";
-            this.LeadingLetterCheckBox.Size = new System.Drawing.Size(88, 17);
-            this.LeadingLetterCheckBox.TabIndex = 12;
-            this.LeadingLetterCheckBox.Text = "Leading Text";
-            this.LeadingLetterCheckBox.UseVisualStyleBackColor = true;
-            this.LeadingLetterCheckBox.CheckedChanged += new System.EventHandler(this.LeadingLetterCheckBox_CheckedChanged);
-            // 
-            // LeadingZerosCheckBox
-            // 
-            this.LeadingZerosCheckBox.AutoSize = true;
-            this.LeadingZerosCheckBox.Location = new System.Drawing.Point(235, 80);
-            this.LeadingZerosCheckBox.Name = "LeadingZerosCheckBox";
-            this.LeadingZerosCheckBox.Size = new System.Drawing.Size(94, 17);
-            this.LeadingZerosCheckBox.TabIndex = 3;
-            this.LeadingZerosCheckBox.Text = "Leading Zeros";
-            this.LeadingZerosCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // StartBtn
-            // 
-            this.StartBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.StartBtn.Location = new System.Drawing.Point(283, 213);
-            this.StartBtn.Name = "StartBtn";
-            this.StartBtn.Size = new System.Drawing.Size(75, 23);
-            this.StartBtn.TabIndex = 4;
-            this.StartBtn.Text = "Start";
-            this.StartBtn.UseVisualStyleBackColor = true;
-            this.StartBtn.Click += new System.EventHandler(this.StartBtn_Click);
-            // 
-            // EndNumberTxtBox
-            // 
-            this.EndNumberTxtBox.Enabled = false;
-            this.EndNumberTxtBox.Location = new System.Drawing.Point(12, 158);
-            this.EndNumberTxtBox.Name = "EndNumberTxtBox";
-            this.EndNumberTxtBox.Size = new System.Drawing.Size(143, 20);
-            this.EndNumberTxtBox.TabIndex = 11;
-            // 
-            // CancelBtn
-            // 
-            this.CancelBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.CancelBtn.Location = new System.Drawing.Point(364, 213);
-            this.CancelBtn.Name = "CancelBtn";
-            this.CancelBtn.Size = new System.Drawing.Size(75, 23);
-            this.CancelBtn.TabIndex = 3;
-            this.CancelBtn.Text = "Cancel";
-            this.CancelBtn.UseVisualStyleBackColor = true;
-            this.CancelBtn.Click += new System.EventHandler(this.CancelBtn_Click);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(9, 142);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(66, 13);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "End Number";
-            // 
-            // StartNumberTxtBox
-            // 
-            this.StartNumberTxtBox.Enabled = false;
-            this.StartNumberTxtBox.Location = new System.Drawing.Point(12, 119);
-            this.StartNumberTxtBox.Name = "StartNumberTxtBox";
-            this.StartNumberTxtBox.Size = new System.Drawing.Size(143, 20);
-            this.StartNumberTxtBox.TabIndex = 9;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(9, 103);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(69, 13);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Start Number";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(9, 18);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(34, 13);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Type:";
-            // 
-            // SavePathBtn
-            // 
-            this.SavePathBtn.Location = new System.Drawing.Point(407, 18);
-            this.SavePathBtn.Name = "SavePathBtn";
-            this.SavePathBtn.Size = new System.Drawing.Size(28, 20);
-            this.SavePathBtn.TabIndex = 6;
-            this.SavePathBtn.Text = "...";
-            this.SavePathBtn.UseVisualStyleBackColor = true;
-            this.SavePathBtn.Click += new System.EventHandler(this.SavePathBtn_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(178, 18);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 13);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "File Path:";
-            // 
-            // IncrementTxtBox
-            // 
-            this.IncrementTxtBox.Location = new System.Drawing.Point(12, 80);
-            this.IncrementTxtBox.Name = "IncrementTxtBox";
-            this.IncrementTxtBox.Size = new System.Drawing.Size(143, 20);
-            this.IncrementTxtBox.TabIndex = 2;
-            // 
-            // FilePathTxtBox
-            // 
-            this.FilePathTxtBox.Enabled = false;
-            this.FilePathTxtBox.Location = new System.Drawing.Point(235, 18);
-            this.FilePathTxtBox.Name = "FilePathTxtBox";
-            this.FilePathTxtBox.Size = new System.Drawing.Size(166, 20);
-            this.FilePathTxtBox.TabIndex = 4;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 64);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Increment Value";
-            // 
-            // CsvOutputCheckBox
-            // 
-            this.CsvOutputCheckBox.AutoSize = true;
-            this.CsvOutputCheckBox.Location = new System.Drawing.Point(235, 44);
-            this.CsvOutputCheckBox.Name = "CsvOutputCheckBox";
-            this.CsvOutputCheckBox.Size = new System.Drawing.Size(139, 17);
-            this.CsvOutputCheckBox.TabIndex = 3;
-            this.CsvOutputCheckBox.Text = "Output Changes to CSV";
-            this.CsvOutputCheckBox.UseVisualStyleBackColor = true;
-            this.CsvOutputCheckBox.CheckedChanged += new System.EventHandler(this.CsvOutputCheckBox_CheckedChanged);
-            // 
-            // ModeComboBox
-            // 
-            this.ModeComboBox.FormattingEnabled = true;
-            this.ModeComboBox.Items.AddRange(new object[] {
-            "All",
-            "Increment Only",
-            "From Number",
-            "To Number",
-            "Between Numbers"});
-            this.ModeComboBox.Location = new System.Drawing.Point(12, 40);
-            this.ModeComboBox.Name = "ModeComboBox";
-            this.ModeComboBox.Size = new System.Drawing.Size(143, 21);
-            this.ModeComboBox.TabIndex = 0;
-            this.ModeComboBox.SelectedIndexChanged += new System.EventHandler(this.ModeComboBox_SelectedIndexChanged);
-            this.ModeComboBox.TextChanged += new System.EventHandler(this.ModeComboBox_TextChanged);
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox3.Controls.Add(this.PolylineStatusTxtBox);
-            this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Controls.Add(this.PickPolylineBtn);
-            this.groupBox3.Location = new System.Drawing.Point(12, 93);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(445, 53);
-            this.groupBox3.TabIndex = 2;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Polyline Details";
-            // 
-            // PolylineStatusTxtBox
-            // 
-            this.PolylineStatusTxtBox.Enabled = false;
-            this.PolylineStatusTxtBox.Location = new System.Drawing.Point(55, 19);
-            this.PolylineStatusTxtBox.Name = "PolylineStatusTxtBox";
-            this.PolylineStatusTxtBox.Size = new System.Drawing.Size(290, 20);
-            this.PolylineStatusTxtBox.TabIndex = 5;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 19);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Status:";
-            // 
-            // PickPolylineBtn
-            // 
-            this.PickPolylineBtn.Location = new System.Drawing.Point(351, 17);
-            this.PickPolylineBtn.Name = "PickPolylineBtn";
-            this.PickPolylineBtn.Size = new System.Drawing.Size(84, 23);
-            this.PickPolylineBtn.TabIndex = 3;
-            this.PickPolylineBtn.Text = "Pick Polyline";
-            this.PickPolylineBtn.UseVisualStyleBackColor = true;
-            this.PickPolylineBtn.Click += new System.EventHandler(this.PickPolylineBtn_Click);
-            // 
-            // SaveFileDialogCSV
-            // 
-            this.SaveFileDialogCSV.CheckFileExists = true;
-            this.SaveFileDialogCSV.CreatePrompt = true;
-            this.SaveFileDialogCSV.DefaultExt = "csv";
-            this.SaveFileDialogCSV.InitialDirectory = "%userprofile%";
-            this.SaveFileDialogCSV.RestoreDirectory = true;
-            this.SaveFileDialogCSV.SupportMultiDottedExtensions = true;
-            this.SaveFileDialogCSV.Title = "Save to .CSV";
-            this.SaveFileDialogCSV.FileOk += new System.ComponentModel.CancelEventHandler(this.SaveFileDialogCSV_FileOk);
+            groupBox2.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            groupBox2.Controls.Add(PLineDuplicates);
+            groupBox2.Controls.Add(LeadingLetterTxtBox);
+            groupBox2.Controls.Add(LeadingLetterCheckBox);
+            groupBox2.Controls.Add(LeadingZerosCheckBox);
+            groupBox2.Controls.Add(StartBtn);
+            groupBox2.Controls.Add(CancelBtn);
+            groupBox2.Controls.Add(StartNumberTxtBox);
+            groupBox2.Controls.Add(label6);
+            groupBox2.Controls.Add(label5);
+            groupBox2.Controls.Add(SavePathBtn);
+            groupBox2.Controls.Add(label4);
+            groupBox2.Controls.Add(IncrementTxtBox);
+            groupBox2.Controls.Add(FilePathTxtBox);
+            groupBox2.Controls.Add(label2);
+            groupBox2.Controls.Add(CsvOutputCheckBox);
+            groupBox2.Controls.Add(ModeComboBox);
+            groupBox2.Location = new System.Drawing.Point(14, 175);
+            groupBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            groupBox2.Size = new System.Drawing.Size(519, 279);
+            groupBox2.TabIndex = 1;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Mode of Operation";
             // 
             // PLineDuplicates
             // 
-            this.PLineDuplicates.AutoSize = true;
-            this.PLineDuplicates.Location = new System.Drawing.Point(235, 119);
-            this.PLineDuplicates.Name = "PLineDuplicates";
-            this.PLineDuplicates.Size = new System.Drawing.Size(156, 17);
-            this.PLineDuplicates.TabIndex = 14;
-            this.PLineDuplicates.Text = "Polyline Vertices Duplicates";
-            this.PLineDuplicates.UseVisualStyleBackColor = true;
+            PLineDuplicates.AutoSize = true;
+            PLineDuplicates.Location = new System.Drawing.Point(274, 137);
+            PLineDuplicates.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            PLineDuplicates.Name = "PLineDuplicates";
+            PLineDuplicates.Size = new System.Drawing.Size(169, 19);
+            PLineDuplicates.TabIndex = 14;
+            PLineDuplicates.Text = "Polyline Vertices Duplicates";
+            PLineDuplicates.UseVisualStyleBackColor = true;
+            // 
+            // LeadingLetterTxtBox
+            // 
+            LeadingLetterTxtBox.Enabled = false;
+            LeadingLetterTxtBox.Location = new System.Drawing.Point(14, 235);
+            LeadingLetterTxtBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            LeadingLetterTxtBox.Name = "LeadingLetterTxtBox";
+            LeadingLetterTxtBox.Size = new System.Drawing.Size(233, 23);
+            LeadingLetterTxtBox.TabIndex = 13;
+            // 
+            // LeadingLetterCheckBox
+            // 
+            LeadingLetterCheckBox.AutoSize = true;
+            LeadingLetterCheckBox.Location = new System.Drawing.Point(14, 212);
+            LeadingLetterCheckBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            LeadingLetterCheckBox.Name = "LeadingLetterCheckBox";
+            LeadingLetterCheckBox.Size = new System.Drawing.Size(92, 19);
+            LeadingLetterCheckBox.TabIndex = 12;
+            LeadingLetterCheckBox.Text = "Leading Text";
+            LeadingLetterCheckBox.UseVisualStyleBackColor = true;
+            LeadingLetterCheckBox.CheckedChanged += LeadingLetterCheckBox_CheckedChanged;
+            // 
+            // LeadingZerosCheckBox
+            // 
+            LeadingZerosCheckBox.AutoSize = true;
+            LeadingZerosCheckBox.Location = new System.Drawing.Point(274, 92);
+            LeadingZerosCheckBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            LeadingZerosCheckBox.Name = "LeadingZerosCheckBox";
+            LeadingZerosCheckBox.Size = new System.Drawing.Size(100, 19);
+            LeadingZerosCheckBox.TabIndex = 3;
+            LeadingZerosCheckBox.Text = "Leading Zeros";
+            LeadingZerosCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // StartBtn
+            // 
+            StartBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
+            StartBtn.Location = new System.Drawing.Point(330, 246);
+            StartBtn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            StartBtn.Name = "StartBtn";
+            StartBtn.Size = new System.Drawing.Size(88, 27);
+            StartBtn.TabIndex = 4;
+            StartBtn.Text = "Start";
+            StartBtn.UseVisualStyleBackColor = true;
+            StartBtn.Click += StartBtn_Click;
+            // 
+            // CancelBtn
+            // 
+            CancelBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
+            CancelBtn.Location = new System.Drawing.Point(425, 246);
+            CancelBtn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            CancelBtn.Name = "CancelBtn";
+            CancelBtn.Size = new System.Drawing.Size(88, 27);
+            CancelBtn.TabIndex = 3;
+            CancelBtn.Text = "Cancel";
+            CancelBtn.UseVisualStyleBackColor = true;
+            CancelBtn.Click += CancelBtn_Click;
+            // 
+            // StartNumberTxtBox
+            // 
+            StartNumberTxtBox.Enabled = false;
+            StartNumberTxtBox.Location = new System.Drawing.Point(14, 137);
+            StartNumberTxtBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            StartNumberTxtBox.Name = "StartNumberTxtBox";
+            StartNumberTxtBox.Size = new System.Drawing.Size(166, 23);
+            StartNumberTxtBox.TabIndex = 9;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new System.Drawing.Point(10, 119);
+            label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label6.Name = "label6";
+            label6.Size = new System.Drawing.Size(121, 15);
+            label6.TabIndex = 8;
+            label6.Text = "Increment from value";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new System.Drawing.Point(10, 21);
+            label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label5.Name = "label5";
+            label5.Size = new System.Drawing.Size(35, 15);
+            label5.TabIndex = 7;
+            label5.Text = "Type:";
+            // 
+            // SavePathBtn
+            // 
+            SavePathBtn.Location = new System.Drawing.Point(475, 21);
+            SavePathBtn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            SavePathBtn.Name = "SavePathBtn";
+            SavePathBtn.Size = new System.Drawing.Size(33, 23);
+            SavePathBtn.TabIndex = 6;
+            SavePathBtn.Text = "...";
+            SavePathBtn.UseVisualStyleBackColor = true;
+            SavePathBtn.Click += SavePathBtn_Click;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new System.Drawing.Point(208, 21);
+            label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label4.Name = "label4";
+            label4.Size = new System.Drawing.Size(55, 15);
+            label4.TabIndex = 5;
+            label4.Text = "File Path:";
+            // 
+            // IncrementTxtBox
+            // 
+            IncrementTxtBox.Location = new System.Drawing.Point(14, 92);
+            IncrementTxtBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            IncrementTxtBox.Name = "IncrementTxtBox";
+            IncrementTxtBox.Size = new System.Drawing.Size(166, 23);
+            IncrementTxtBox.TabIndex = 2;
+            // 
+            // FilePathTxtBox
+            // 
+            FilePathTxtBox.Enabled = false;
+            FilePathTxtBox.Location = new System.Drawing.Point(274, 21);
+            FilePathTxtBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            FilePathTxtBox.Name = "FilePathTxtBox";
+            FilePathTxtBox.Size = new System.Drawing.Size(193, 23);
+            FilePathTxtBox.TabIndex = 4;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new System.Drawing.Point(10, 74);
+            label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(92, 15);
+            label2.TabIndex = 1;
+            label2.Text = "Increment Value";
+            // 
+            // CsvOutputCheckBox
+            // 
+            CsvOutputCheckBox.AutoSize = true;
+            CsvOutputCheckBox.Location = new System.Drawing.Point(274, 51);
+            CsvOutputCheckBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            CsvOutputCheckBox.Name = "CsvOutputCheckBox";
+            CsvOutputCheckBox.Size = new System.Drawing.Size(151, 19);
+            CsvOutputCheckBox.TabIndex = 3;
+            CsvOutputCheckBox.Text = "Output Changes to CSV";
+            CsvOutputCheckBox.UseVisualStyleBackColor = true;
+            CsvOutputCheckBox.CheckedChanged += CsvOutputCheckBox_CheckedChanged;
+            // 
+            // ModeComboBox
+            // 
+            ModeComboBox.FormattingEnabled = true;
+            ModeComboBox.Items.AddRange(new object[] { "Renumber all", "Increment from value" });
+            ModeComboBox.Location = new System.Drawing.Point(14, 46);
+            ModeComboBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            ModeComboBox.Name = "ModeComboBox";
+            ModeComboBox.Size = new System.Drawing.Size(166, 23);
+            ModeComboBox.TabIndex = 0;
+            ModeComboBox.SelectedIndexChanged += ModeComboBox_SelectedIndexChanged;
+            ModeComboBox.TextChanged += ModeComboBox_TextChanged;
+            // 
+            // groupBox3
+            // 
+            groupBox3.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            groupBox3.Controls.Add(PolylineStatusTxtBox);
+            groupBox3.Controls.Add(label3);
+            groupBox3.Controls.Add(PickPolylineBtn);
+            groupBox3.Location = new System.Drawing.Point(14, 107);
+            groupBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            groupBox3.Size = new System.Drawing.Size(519, 61);
+            groupBox3.TabIndex = 2;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "Polyline Details";
+            // 
+            // PolylineStatusTxtBox
+            // 
+            PolylineStatusTxtBox.Enabled = false;
+            PolylineStatusTxtBox.Location = new System.Drawing.Point(64, 22);
+            PolylineStatusTxtBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            PolylineStatusTxtBox.Name = "PolylineStatusTxtBox";
+            PolylineStatusTxtBox.Size = new System.Drawing.Size(338, 23);
+            PolylineStatusTxtBox.TabIndex = 5;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new System.Drawing.Point(10, 22);
+            label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(42, 15);
+            label3.TabIndex = 4;
+            label3.Text = "Status:";
+            // 
+            // PickPolylineBtn
+            // 
+            PickPolylineBtn.Location = new System.Drawing.Point(410, 20);
+            PickPolylineBtn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            PickPolylineBtn.Name = "PickPolylineBtn";
+            PickPolylineBtn.Size = new System.Drawing.Size(98, 27);
+            PickPolylineBtn.TabIndex = 3;
+            PickPolylineBtn.Text = "Pick Polyline";
+            PickPolylineBtn.UseVisualStyleBackColor = true;
+            PickPolylineBtn.Click += PickPolylineBtn_Click;
+            // 
+            // SaveFileDialogCSV
+            // 
+            SaveFileDialogCSV.CheckFileExists = true;
+            SaveFileDialogCSV.CreatePrompt = true;
+            SaveFileDialogCSV.DefaultExt = "csv";
+            SaveFileDialogCSV.InitialDirectory = "%userprofile%";
+            SaveFileDialogCSV.RestoreDirectory = true;
+            SaveFileDialogCSV.SupportMultiDottedExtensions = true;
+            SaveFileDialogCSV.Title = "Save to .CSV";
+            SaveFileDialogCSV.FileOk += SaveFileDialogCSV_FileOk;
             // 
             // MainInterface
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(469, 406);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.Name = "MainInterface";
-            this.Text = "Altext";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(547, 468);
+            Controls.Add(groupBox3);
+            Controls.Add(groupBox2);
+            Controls.Add(groupBox1);
+            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Name = "MainInterface";
+            Text = "Altext";
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
+            groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
+            ResumeLayout(false);
 
         }
 
@@ -393,8 +393,6 @@
         private System.Windows.Forms.TextBox PolylineStatusTxtBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button PickPolylineBtn;
-        private System.Windows.Forms.TextBox EndNumberTxtBox;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox StartNumberTxtBox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
